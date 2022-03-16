@@ -51,11 +51,11 @@
             :rotation-y="Math.sin(now * 0.001) * 0.2"
             :scale="0.25"
         >
-            <octahedronGeometry />
+            <icosahedronGeometry :args="[1, 1]" />
             <meshBasicMaterial color="white" />
 
             <mesh :scale="1.001">
-                <octahedronGeometry />
+                <icosahedronGeometry :args="[1, 1]" />
                 <meshBasicMaterial color="black" wireframe />
             </mesh>
         </mesh>
